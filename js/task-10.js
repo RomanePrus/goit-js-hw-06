@@ -15,9 +15,7 @@ function createBoxes(amount) {
   let boxes = "";
 
   for (let i = 0; i < amount; i += 1) {
-    boxes += `<div style="width: ${boxSize}px; height: ${boxSize}px; background-color: ${getRandomHexColor()}; font-size: ${
-      i + 8
-    }px;"></div>`;
+    boxes += `<div style="width: ${boxSize}px; height: ${boxSize}px; background-color: ${getRandomHexColor()}; "></div>`;
     boxSize += 10;
   }
   refs.boxesEl.insertAdjacentHTML("afterbegin", boxes);
