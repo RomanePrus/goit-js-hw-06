@@ -20,6 +20,7 @@ function createBoxes(amount) {
   }
   refs.boxesEl.insertAdjacentHTML("afterbegin", boxes);
 }
+
 refs.btnCreate.addEventListener("click", () => createBoxes(refs.inputEl.value));
 
 function destroyBoxes() {
